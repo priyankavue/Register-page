@@ -1,8 +1,7 @@
-document.getElementById('registerForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting
+function register(){
 
     const username = document.getElementById('username').value;
-    const password = document.getElementById('pwd').value;
+    const password = document.getElementById('password').value;
     const email = document.getElementById('email').value;
 
     // Basic validation (you can enhance this as needed)
@@ -12,8 +11,8 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     } else {
         alert('Please fill in all fields.');
     }
-});
 
+}
 
 
 
